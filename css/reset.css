@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+:root {
+  --text-color: #605349; /* 茶色*/
+  --accent-color: #be8d8e; /*ピンク*/
+  --YuMincho: "游明朝体", "Yu Mincho", YuMincho, serif;
+  --Garamond: "Cormorant Garamond", serif; /* タイトル,一部POINT*/
+  --Infant: "Cormorant Infant", serif; /*一部数字*/
+  --Pinyon: "Pinyon Script", cursive; /* 英数字*/
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+blockquote,
+figure {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: var(--text-color);
+  font-family: "Zen Old Mincho", "游明朝体", "Yu Mincho", YuMincho,
+    "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "MS P明朝", "MS PMincho", serif;
+  overflow-wrap: anywhere; /* 収まらない場合に折り返す */
+  word-break: normal; /* 単語の分割はデフォルトに依存 */
+  line-break: strict;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+button {
+  all: unset;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  cursor: pointer;
+  outline: none;
+}
+
+body {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.color-pink {
+  color: var(--accent-color);
+}
+
+
